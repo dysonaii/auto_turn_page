@@ -201,7 +201,7 @@ class MainActivity : Activity() {
             PageTurnService.saveRunning(this)
         } else {
             if (!isServiceOn()) {
-                status.text = "狀態：請先開無障礙權限並啟用 Auto翻頁"
+                status.text = "狀態：請先開無障礙權限並啟用 自動翻頁"
                 startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
                 return
             }

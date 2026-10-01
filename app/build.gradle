@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.autoscroll'
+    namespace 'com.example.auto_turn_page'
     compileSdk 34
 
     defaultConfig {
-        applicationId 'com.example.autoscroll'
+        applicationId 'com.example.auto_turn_page'
         minSdk 26
         targetSdk 34
         versionCode 1

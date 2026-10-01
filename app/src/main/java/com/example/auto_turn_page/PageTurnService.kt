@@ -1,4 +1,4 @@
-package com.example.autoscroll
+package com.example.auto_turn_page
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.GestureDescription

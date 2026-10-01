@@ -1,4 +1,4 @@
-package com.example.autoscroll
+package com.example.auto_turn_page
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -227,7 +227,7 @@ class MainActivity : Activity() {
 
     private fun isServiceOn(): Boolean {
         val flat = Settings.Secure.getString(contentResolver, Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES) ?: return false
-        // 系統存的是 com.example.autoscroll/com.example.autoscroll.PageTurnService 全寫，短寫比對永遠 false
+        // 系統存的是 com.example.auto_turn_page/com.example.auto_turn_page.PageTurnService 全寫，短寫比對永遠 false
         return flat.split(':').any { it.contains(packageName, ignoreCase = true) && it.contains("PageTurnService", ignoreCase = true) }
     }
 }
